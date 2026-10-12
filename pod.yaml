@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app
+  labels:
+    app: app
+spec:
+  containers:
+    - name: app
+      image: miqueiaseduardo/meu-site:1.0
+      ports:
+        - containerPort: 80
